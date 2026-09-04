@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+	color-scheme: dark;
+	--apna-black: #05070a;
+	--apna-indigo: #6366f1;
+	--apna-border: #1f293d;
+}
+
+html {
+	scroll-behavior: smooth;
+	background: var(--apna-black);
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	background:
+		radial-gradient(circle at 50% -20%, rgba(99, 102, 241, 0.12), transparent 38rem),
+		linear-gradient(135deg, rgba(31, 41, 61, 0.12), transparent 34% 66%, rgba(99, 102, 241, 0.04)),
+		var(--apna-black);
+}
+
+button {
+	cursor: pointer;
+}
+
+.tab-panel {
+	animation: tab-panel-enter 420ms ease both;
+}
+
+@keyframes tab-panel-enter {
+	from { opacity: 0; transform: translateY(10px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html { scroll-behavior: auto; }
+	.tab-panel { animation: none; }
+}

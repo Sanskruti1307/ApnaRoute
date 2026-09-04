@@ -1,0 +1,12 @@
+import React from 'react';
+import { Globe2, LockKeyhole, ShieldCheck, UsersRound } from 'lucide-react';
+
+export const AboutView: React.FC = () => (
+  <section className="tab-panel mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+    <div className="rounded-2xl border border-[#1f293d] bg-[#0d111b]/90 p-6 sm:p-10">
+      <div className="max-w-2xl"><p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-indigo-400">The ApnaRoute mission</p><h2 className="mt-3 font-['Outfit'] text-3xl font-bold tracking-tight text-white sm:text-4xl">Make every Indian journey feel considered, connected, and safer.</h2><p className="mt-4 text-sm leading-7 text-slate-400">ApnaRoute brings planning, trusted local knowledge, and emergency readiness into one calm travel layer. We help travelers move with more context while giving local partners a fair, visible way to be discovered.</p></div>
+      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{[[ShieldCheck, 'Safety by design', 'Live advisories, verified partners, and one-tap emergency support.'], [LockKeyhole, 'Privacy-minded', 'Your saved routes and travel preferences stay in your control.'], [Globe2, 'India-wide context', 'From mountain corridors to coastal escapes, route intelligence follows the terrain.'], [UsersRound, 'Built with locals', 'Travelers and regional experts make better journeys together.']].map(([Icon, title, copy]) => { const FeatureIcon = Icon as typeof ShieldCheck; return <div key={title as string} className="border-t border-slate-800/80 pt-4"><FeatureIcon className="h-5 w-5 text-indigo-400" /><h3 className="mt-3 text-sm font-semibold text-white">{title as string}</h3><p className="mt-1 text-xs leading-relaxed text-slate-500">{copy as string}</p></div>; })}</div>
+      <div className="mt-10 grid grid-cols-2 gap-3 border-t border-slate-800/80 pt-6 sm:grid-cols-4">{[['500+', 'destinations'], ['28', 'states in route data'], ['24/7', 'safety monitoring'], ['100%', 'verified partner focus']].map(([value, label]) => <div key={label}><strong className="font-['Outfit'] text-2xl text-white">{value}</strong><span className="mt-1 block text-[10px] uppercase tracking-wider text-slate-500">{label}</span></div>)}</div>
+    </div>
+  </section>
+);

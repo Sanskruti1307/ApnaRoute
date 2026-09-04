@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": "usr_9e9b1a354ebce1b0",
+      "email": "aryan@example.com",
+      "fullName": "Aryan Sharma",
+      "passwordHash": "63ecde0b368ab302ca8d11a90c481707:e1a6b9bfb5df3d7412cb7cb63e5b3f0e47c063b98bd80f559f6bb5930e1ae91b2fa7458b608c49aa6d2dbf56cf985cbbd18069ed3f14a5aecd83a6e89cc0e065",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Aryan%20Sharma",
+      "provider": "local",
+      "createdAt": "2026-09-04T12:25:20.505Z",
+      "lastLoginAt": "2026-09-04T12:25:25.285Z",
+      "emergencyContact": "+91 98765 43210"
+    },
+    {
+      "id": "usr_1f1278f1938233cc",
+      "email": "sanskrutithombare1307@gmail.com",
+      "fullName": "Sanku",
+      "passwordHash": "2bec9e8b3f3cf418848d4f849ceab094:0ceda7dc81515d9cbbe077d4a143b9d147a1288b647b0205bc6dc9c24cf4576179ca03d2cd26aec00e0fa06fe737f0a4ec85c1c27948acfb824055315a21c944",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Sanku",
+      "provider": "local",
+      "createdAt": "2026-09-04T12:54:37.463Z",
+      "lastLoginAt": "2026-09-04T13:03:12.184Z",
+      "emergencyContact": "+91 98765 43210"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c3JfOWU5YjFhMzU0ZWJjZTFiMCIsImlhdCI6MTc4ODUyNDcyMCwiZXhwIjoxNzkxMTE2NzIwfQ.tEtfuB3sgIZ7cWkfEjqWkNIWrlDkIWufiXxaeIHs62c",
+      "userId": "usr_9e9b1a354ebce1b0",
+      "createdAt": "2026-09-04T12:25:20.506Z",
+      "expiresAt": "2026-10-04T12:25:20.506Z"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c3JfOWU5YjFhMzU0ZWJjZTFiMCIsImlhdCI6MTc4ODUyNDcyNSwiZXhwIjoxNzkxMTE2NzI1fQ.dmiRkccZeUbSkaSbkn9rf53y-MuRMC_iQwCOk_WvZrU",
+      "userId": "usr_9e9b1a354ebce1b0",
+      "createdAt": "2026-09-04T12:25:25.286Z",
+      "expiresAt": "2026-10-04T12:25:25.286Z"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c3JfMWYxMjc4ZjE5MzgyMzNjYyIsImlhdCI6MTc4ODUyNjk5MiwiZXhwIjoxNzkxMTE4OTkyfQ.TJVz1GkSwzDSOnohIXNC6RjZscwipaxB42JHL2CeUiY",
+      "userId": "usr_1f1278f1938233cc",
+      "createdAt": "2026-09-04T13:03:12.185Z",
+      "expiresAt": "2026-10-04T13:03:12.185Z"
+    }
+  ]
+}
