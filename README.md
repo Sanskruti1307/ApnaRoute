@@ -1,8 +1,67 @@
- # ApnaRoute
+# ApnaRoute
 
-ApnaRoute is India's next-generation tourism, route-planning, and travel-safety platform. It combines personalized trip planning, verified local services, live route intelligence, traveler communities, and emergency support in one dark, responsive web application.
+### AI-powered travel planning and safety for journeys across India
 
-> **Your journey, Your route.**
+ApnaRoute helps travelers plan personalized routes, discover verified local services, and stay safer with live travel intelligence and emergency support in one responsive web application.
+
+## Live Demo and Preview
+
+- **GitHub:** [github.com/Sanskruti1307/ApnaRoute](https://github.com/Sanskruti1307/ApnaRoute)
+- **Local demo:** [http://localhost:3000](http://localhost:3000)
+- **Public demo:** Not deployed yet. The project currently runs through the included Node.js and Express server.
+
+The first screen presents the ApnaRoute value proposition and two simple choices: **Explorer / Guest Access** for destination discovery, or **Traveler / Partner Login** for account-based features.
+
+> **Preview image:** Capture the landing page at `http://localhost:3000`, save it as `docs/landing-page.png`, and add `![ApnaRoute landing page](docs/landing-page.png)` here for a visual portfolio preview.
+
+## Problem Statement
+
+Travelers planning a trip across India often switch between itinerary planners, maps, local-service listings, safety updates, and emergency contacts. ApnaRoute brings these needs together so users can plan a route, find trusted local support, and stay informed throughout the journey.
+
+## Key Features
+
+- **Personalized itineraries:** Generate day-by-day travel plans based on destination, duration, budget, travelers, and travel style.
+- **Destination discovery:** Explore destinations such as Sikkim, Munnar, Manali, Goa, and Jaipur with travel context and advisories.
+- **Safety-first tools:** Access SOS assistance, live advisories, safe-zone information, route safety scores, and active-trip monitoring.
+- **Verified local services:** Discover screened drivers, guides, stays, artisan bazaars, and other regional partners.
+- **Connected travel workspace:** Use AI Concierge, Leaflet maps, saved trips, notifications, and traveler matching.
+
+## User Flow
+
+```mermaid
+flowchart LR
+   A[Open ApnaRoute] --> B{Choose access}
+   B -->|Guest| C[Explore destinations]
+   B -->|Traveler or Partner| D[Sign in or register]
+   C --> E[Plan a route]
+   D --> E
+   E --> F[Generate itinerary]
+   F --> G[Save, monitor, and travel safely]
+```
+
+## Tech Stack
+
+| Area | Technologies |
+| --- | --- |
+| Frontend | React 19, TypeScript, Vite |
+| UI | Tailwind CSS v4, CSS variables, Lucide React, Motion |
+| Backend | Node.js, Express.js, TypeScript, `tsx` |
+| Database | MongoDB |
+| AI | Google Gemini via `@google/genai` |
+| Maps | Leaflet |
+| Authentication | Email/password and Google OAuth flows |
+| Build | Vite and esbuild |
+
+## My Role and Technical Takeaway
+
+This project demonstrates end-to-end frontend and backend product development. Key contributions include:
+
+- Designed and implemented the responsive landing page, sticky navigation, and role-based access portal.
+- Built reusable React components for destinations, itineraries, maps, services, notifications, and safety workflows.
+- Connected the frontend to Express API services for travel data, authentication, notifications, and AI requests.
+- Integrated server-side Gemini itinerary and concierge functionality.
+- Implemented authentication states, saved-trip handling, modal interactions, and account-aware views.
+- Added responsive dark-theme styling, accessible controls, reduced-motion support, and production documentation.
 
 ## Product Overview
 
@@ -316,8 +375,6 @@ The production build currently emits a bundle-size warning for the main JavaScri
 No license is currently declared in this repository. Add a license file before distributing the project publicly.
 
 This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/e79b8d25-b112-451e-a94a-9acdb27e6a2d
 
 ## Run Locally
 
